@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-.body {
+body {
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -20,7 +20,7 @@ li {
 a {
     color: var(--color1);
     text-decoration: none;
-    left: 19.312rem;
+    
 }
 h1 {
     font-size: 1rem;
@@ -34,6 +34,7 @@ h1 {
 .container {
     max-width: 75rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .link {
@@ -51,9 +52,6 @@ h1 {
     height: 4rem;
 }
 
-.header__logo {
-
-}
 .header__menu {
     display: flex;
     gap: 2.875rem;
@@ -99,29 +97,78 @@ h1 {
 }
 .banner__second-column {
     flex: 0 0 50%;
+    display: flex;
+    align-items: flex-end;
 }
 .banner__image {
     max-width: 28.125rem;
     line-height: 0;
     margin: 0 auto;
-    height: 100%;
+   
+
 }
 .banner__image img {
     max-width: 100%;
-    height: 100%;
+   
 }
-@media (max-width:1200px){
-    .container {
-        max-width: 970px; 
+@media (max-width: 1024px) {
+    .banner__pluses {
+      display: block;
     }
-}
-@media (max-width:992px){
-    .container {
-        max-width: 750px; 
+  }
+  @media (max-width: 992px) {
+    .banner__title {
+      font-size: 3.5rem;
+      line-height: 4rem;
     }
-}    
-@media (max-width:767px){
-    .container {
-        max-width: none; 
+    .banner__subtitle {
+      font-size: 2rem;
     }
-    } 
+    .banner__button {
+      margin: 0 0 1.5rem 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .header__menu {
+      gap: 2rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .banner__content {
+      display: block;
+    }
+    .banner__info {
+      text-align: center;
+    }
+    .banner__pluses {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 635px) {
+    .header__menu {
+      display: none;
+    }
+  }
+  @media (max-width: 540px) {
+    .banner__pluses {
+      display: block;
+      max-width: 11.7rem;
+      margin: 0 auto;
+
+      
+    }
+    .banner__plus {
+      text-align: left;
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 380px) {
+    .banner__title {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    .banner__subtitle {
+      font-size: 1.7rem;
+    }
+  }
