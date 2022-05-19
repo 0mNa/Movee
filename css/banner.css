@@ -79,3 +79,62 @@
 .banner__image img {
   max-width: 100%;
 }
+@media (max-width: 1024px) {
+  .banner__pluses {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .banner__title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .banner__subtitle {
+    font-size: 2rem;
+  }
+  .banner__button {
+    margin: 0 0 1.5rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    gap: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .banner__content {
+    display: block;
+  }
+  .banner__info {
+    text-align: center;
+  }
+  .banner__pluses {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 635px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .banner__pluses {
+    display: block;
+    max-width: 11.7rem;
+    margin: 0 auto;
+  }
+  .banner__plus {
+    text-align: left;
+    gap: 1rem;
+  }
+}
+@media (max-width: 380px) {
+  .banner__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .banner__subtitle {
+    font-size: 1.7rem;
+  }
+}
