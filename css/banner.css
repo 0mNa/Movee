@@ -2,6 +2,7 @@
 
 .banner {
   background-color: var(--color2);
+  padding: 0 1rem;
 }
 .container {
   max-width: 75rem;
@@ -42,9 +43,13 @@
 .banner__title {
   font-size: 4.375rem;
   line-height: 4.7rem;
+  margin: 2rem 0 0 0;
+  
 }
 .banner__subtitle {
   font-size: 2.5rem;
+  line-height: 4rem;
+  margin: 1.75rem 0 0 0;
 }
 .banner__button {
   background-color: var(--color3);
@@ -52,7 +57,7 @@
   padding: 1rem 3.75rem;
   display: inline-block;
   cursor: pointer;
-  margin: 0 0 3rem 0;
+  margin: 3rem 0 0 0;
 }
 .banner__button:hover {
   background-color: var(--color5);
@@ -60,6 +65,7 @@
 .banner__pluses {
   display: flex;
   gap: 2.5rem;
+  margin: 3.5rem 0 0 0;
 }
 .banner__plus {
   display: flex;
@@ -83,7 +89,11 @@
   .banner__pluses {
     display: block;
   }
+  .banner__plus {
+    margin: 0 0 1.5rem 0;
+  }
 }
+
 @media (max-width: 992px) {
   .banner__title {
     font-size: 3.5rem;
@@ -127,6 +137,9 @@
   .banner__plus {
     text-align: left;
     gap: 1rem;
+  }
+  .banner__content {
+    margin: 0 1rem 0;
   }
 }
 @media (max-width: 380px) {
