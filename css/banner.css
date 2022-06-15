@@ -1,12 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 
 .banner {
   background-color: var(--color2);
-  padding: 0 1rem;
-}
-.container {
-  max-width: 75rem;
-  margin: 0 auto;
   padding: 0 1rem;
 }
 

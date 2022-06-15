@@ -1,18 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 @import "./banner.css";
 @import "./how.css";
+@import "./price.css";
+@import "./carpark.css";
+@import "./comment.css";
+@import "./order.css";
 :root {
     --color1: #000;
     --color2: #fed100;
     --color3: #ff352b;
     --color4: #fff;
     --color5: #ff772b;
-}
+    --color6: #E5E5E5;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+}
 
 
 li {
     list-style-type: none;
+    padding-right: 1rem;
 }
 
 * {
@@ -46,7 +53,7 @@ body {
     height: 100%;
     width: 100%;
     font-size: 100%;
-    line-height: 1;
+    
     font-size: 16px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -78,6 +85,7 @@ a:hover {
 }
 ul li {
     list-style: none;
+
 }
 img {
     vertical-align: top;
@@ -91,3 +99,21 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
+.container {
+    max-width: 77rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.title {
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.border:hover {
+    background-color: var(--color2);
+  }
