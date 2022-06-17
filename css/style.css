@@ -6,6 +6,7 @@
 @import "./carpark.css";
 @import "./comment.css";
 @import "./order.css";
+@import "./footer.css";
 :root {
     --color1: #000;
     --color2: #fed100;
