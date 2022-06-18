@@ -1,0 +1,121 @@
+.order {
+  padding: 0 0 5rem 0;
+}
+.order__container {
+  max-width: 49rem !important;
+}
+
+.order__subtitle {
+  margin: 0 0 2rem 0;
+}
+
+
+.order__inputs {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 4rem 2rem;
+  margin: 0 0 3rem 0;
+}
+.order__input input {
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid var(--color1);
+  width: 100%;
+}
+
+.order__input input:focus {
+  outline: none;
+}
+
+
+.order__select-title {
+  margin: 0 0 0.5rem 0;
+}
+.order__select select {
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid var(--color1);
+  width: 100%;
+}
+.order__payment {
+  margin: 0 0 3rem 0;
+}
+.order__payment-title {
+  margin: 0 0 2rem 0;
+}
+.order__payment-radio {
+  justify-content: space-between;
+  display: flex;
+  gap: 1rem;
+}
+.order__payment-radio label input {
+  margin: 0 0.5rem 0 0;
+}
+.order__services-arrow {
+margin: 0 0 1rem 0;
+}
+.order__services {
+  margin: 0 0 3rem 0;
+}
+.order__services-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.order__service-title {
+  margin: 0 0 2rem 0;
+}
+.order__services-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+.order__services-checkbox label input {
+  margin: 0 0.5rem 0 0;
+}
+.order__time {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.order__time-discount {
+  font-size: 5rem;
+}
+.order__time-button p input {
+  margin: 0 0 0.5rem 0;
+}
+.order__time-button div {
+  background-color: var(--color3);
+  color: var(--color4);
+  padding: 1rem 3.75rem;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+@media (max-width: 740px) {
+  .order__time {
+    display: block;
+    margin: 2rem 0 0 0;
+    
+  }
+  .order__subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 657px) {
+  .order__payment-radio {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .order__inputs {
+    grid-template-columns: 1fr ;
+    display: grid;
+    gap: 4rem 2rem;
+    margin: 0 0 3rem 0;
+  }
+}

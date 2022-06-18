@@ -1,0 +1,39 @@
+.how__title {
+  margin: 4rem 0 3.75rem 0;
+}
+.how__info {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 2rem;
+}
+.how__info-number {
+  font-size: 3.125rem;
+  color: var(--color1);
+  text-shadow: 3px 0 var(--color2);
+  font-weight: normal;
+  flex: 0 0 4.5rem;
+}
+.how__info-title {
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+}
+.how__info-item {
+  display: flex;
+  text-align: left;
+  gap: 1rem;
+}
+
+
+@media (max-width: 1024px) {
+  .how__info {
+    display: block;
+  }
+  .how__info-item {
+    margin: 0 0 1.5rem 0;
+  }
+}
+@media (max-width: 540px) {
+  .how__info-title {
+    line-height: 1.5rem;
+  }
+}
