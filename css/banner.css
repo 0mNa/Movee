@@ -23,11 +23,17 @@
   display: flex;
   gap: 2.875rem;
 }
+.header__menu a:hover {
+  color: var(--color4);
+}
 .header__link:hover {
   color: var(--color3);
 }
-.header__number {
+.header__number  {
   text-decoration: underline;
+}
+.header__number:hover {
+  color: var(--color4);
 }
 .banner__content {
   display: flex;

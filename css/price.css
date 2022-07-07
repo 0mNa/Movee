@@ -40,6 +40,9 @@
   cursor: pointer;
   font-size: 1.25rem;
 }
+.price__content-button:hover {
+  background-color: var(--color5);
+}
 @media (max-width: 1024px) {
   .price__content {
     grid-template-columns: 1fr 1fr;

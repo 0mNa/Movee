@@ -29,6 +29,9 @@
   margin: 1rem 0 0 0;
   text-decoration: underline;
 }
+.comment__read:hover {
+ cursor: pointer;
+}
 .comment__button {
   border: 1px solid var(--color1);
   color: var(--color1);
@@ -41,6 +44,9 @@
   transform: translate(-50%,0);
   font-size: 1.25rem;
   text-align: center;
+}
+.comment__button:hover {
+  background-color: var(--color5);
 }
 @media(max-width:900px) {
   .comment__content {

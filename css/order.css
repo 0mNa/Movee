@@ -9,7 +9,6 @@
   margin: 0 0 2rem 0;
 }
 
-
 .order__inputs {
   grid-template-columns: 1fr 1fr;
   display: grid;
@@ -26,7 +25,6 @@
 .order__input input:focus {
   outline: none;
 }
-
 
 .order__select-title {
   margin: 0 0 0.5rem 0;
@@ -52,7 +50,7 @@
   margin: 0 0.5rem 0 0;
 }
 .order__services-arrow {
-margin: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 .order__services {
   margin: 0 0 3rem 0;
@@ -62,16 +60,49 @@ margin: 0 0 1rem 0;
   align-items: center;
   gap: 0.5rem;
 }
+.order__services-top:hover {
+  cursor: pointer;
+}
 .order__service-title {
   margin: 0 0 2rem 0;
+}
+.order__services-top::before {
+  content: "";
+  position: absolute;
+  top: 0 auto;
+  right: -2rem;
+  width: 1rem;
+  height: 0.125rem;
+  background-color: var(--color1);
+  transform: rotate(45deg);
+}
+.order__services-top::after {
+  content: "";
+  position: absolute;
+  top: 0 auto;
+  right: -2.7rem;
+  width: 1rem;
+  height: 0.125rem;
+  background-color: var(--color1);
+  transform: rotate(-45deg);
+}
+.order__services-top.hide::before {
+  transform: rotate(-45deg);
+}
+.order__services-top.hide::after {
+  transform: rotate(45deg);
 }
 .order__services-checkbox {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 2rem;
 }
+
 .order__services-checkbox label input {
   margin: 0 0.5rem 0 0;
+}
+.order__services-checkbox label input:hover {
+  cursor: pointer;
 }
 .order__time {
   display: flex;
@@ -94,11 +125,13 @@ margin: 0 0 1rem 0;
   font-size: 1.25rem;
   margin: 0 0 0.5rem 0;
 }
+.order__time-button div:hover {
+  background-color: var(--color5);
+}
 @media (max-width: 740px) {
   .order__time {
     display: block;
     margin: 2rem 0 0 0;
-    
   }
   .order__subtitle {
     text-align: center;
@@ -113,7 +146,7 @@ margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
   .order__inputs {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     display: grid;
     gap: 4rem 2rem;
     margin: 0 0 3rem 0;

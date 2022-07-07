@@ -40,6 +40,9 @@
   object-position: 0 0;
   margin: 10rem 0 0 0;
 }
+.carpark__vector:hover {
+  cursor: pointer;
+}
 .carpark__vector img {
   width: 100%;
 }
@@ -51,6 +54,9 @@
   cursor: pointer;
   margin: 3rem 0 0 0;
   font-size: 1.25rem;
+}
+.carpark__button:hover {
+  background-color: var(--color5);
 }
 .carpark__second-column {
   display: flex;
