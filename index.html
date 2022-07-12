@@ -13,13 +13,16 @@
 <body>
     <section class="banner">
         <div class="container">
+            <div class="burger"> 
+                <span></span>
+            </div>
             <header class="header">
                 <div class="header__logo">MOVEE</div>
                 <nav class="header__menu">
-                    <a href="#" class="header__hink">Цены</a>
-                    <a href="#" class="header__hink">Автопарк</a>
-                    <a href="#" class="header__hink">Отзывы</a>
-                    <a href="#" class="header__hink">Контакты</a>
+                    <a href="#" class="header__link">Цены</a>
+                    <a href="#" class="header__link">Автопарк</a>
+                    <a href="#" class="header__link">Отзывы</a>
+                    <a href="#" class="header__link">Контакты</a>
                 </nav>
                 <a href="tel:8(029)-999-12-13" class="header__number">8(029)-999-12-13</a>
             </header>
@@ -221,10 +224,10 @@
             <form>
                 <div class="order__inputs">
                     <div class="order__input">
-                        <input type="text" required placeholder="Ваше имя">
+                        <input type="text" required placeholder="Ваше имя" name="first__name">
                     </div>
                     <div class="order__input">
-                        <input type="text" required placeholder="Телефон">
+                        <input type="text" required placeholder="Телефон" name="phone__number">
                     </div>
                     <div class="order__select">
                         <h3 class="order__select-title subtitle">Укажите область</h3>
