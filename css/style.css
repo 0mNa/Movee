@@ -117,4 +117,7 @@ h6 {
 }
 .border:hover {
     background-color: var(--color2);
-  }
+}
+body.lock {
+    overflow: hidden;
+}

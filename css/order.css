@@ -5,6 +5,9 @@
 .order__container {
   max-width: 49rem !important;
 }
+.order__title {
+  padding: 6rem 0 0 0;
+}
 
 .order__subtitle {
   margin: 0 0 2rem 0;
