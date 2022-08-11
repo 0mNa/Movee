@@ -29,8 +29,8 @@ burger.addEventListener("click", openBurger);
 
 
 const slides = document.querySelectorAll(".carpark__info-list");
-const nextBtn = document.querySelector(".carpark__vector-right");
-const prevBtn = document.querySelector(".carpark__vector-left");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
 
 let chosenSlide = 0;
 
@@ -48,9 +48,6 @@ const scrollNext = () => {
       : (slides[i].style.display = "none");
   }
 };
-  console.log(slides);
-
-
 
 nextBtn.addEventListener("click", scrollNext);
 
@@ -65,4 +62,34 @@ const scrollPrev = () => {
 };
 prevBtn.addEventListener("click", scrollPrev);
 
+const timer = document.querySelector(".timer"); 
+let time = new Date().setHours(new Date().getHours() + 6); 
 
+
+
+const timerId = setInterval(() => {
+  const now = new Date().getTime(); 
+
+  const distance = time - now; 
+
+  
+  let hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  timer.innerHTML = `${hours}:${minutes}:${seconds}`; 
+  
+  if (distance < 0) {
+    clearInterval(timerId);
+    timer.innerHTML = "Время истекло";
+    timer.style.fontSize = "5rem";
+    timer.style.lineHeight = "4rem";
+  }
+}, 1000);

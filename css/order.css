@@ -111,8 +111,10 @@
   align-items: center;
 }
 
-.order__time-discount {
+.timer {
   font-size: 5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .order__time-button p input {

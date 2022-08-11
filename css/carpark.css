@@ -28,32 +28,33 @@
   margin: 4rem 0 2.4rem 0;
 }
 .carpark__info-list {
-  gap: 1rem;
-  display:flex;
+  gap: 4rem;
+  display: flex;
   justify-content: space-between;
 }
+
 
 .carpark__list {
   white-space: nowrap;
 }
-.carpark__vector-right {
+.slider__btn {
+  display: flex;
+ justify-content: space-between;
+}
+.next {
   object-fit: scale-down;
   object-position: 0 0;
-  margin: 10rem 0 0 0;
+  background: none;
 }
-.carpark__vector-left {
+.prev {
   object-fit: scale-down;
   object-position: 0 0;
-  margin: 10rem 0 0 0;
+background: none;
 }
-.carpark__vector-right:hover {
-  cursor: pointer;
-}
-.carpark__vector-left:hover {
-  cursor: pointer;
-}
+
 .carpark__vector img {
   width: 100%;
+  background-color: none;
 }
 .carpark__button {
   background-color: var(--color2);
@@ -92,10 +93,10 @@
   }
 }
 @media (max-width: 780px) {
-  .carpark__vector-right {
+  .next {
     display: none;
   }
-  .carpark__vector-left {
+  .prev {
     display: none;
   }
   .carpark__info-title {
